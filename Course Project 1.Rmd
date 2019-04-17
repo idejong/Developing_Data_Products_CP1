@@ -1,0 +1,14 @@
+```{r setup, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 17 april 2019
+```{r, echo=FALSE, warning=FALSE}
+library(leaflet)
+map <- leaflet() %>% 
+addTiles() %>%  # Add default OpenStreetMap map tiles
+addMarkers(lng=-70.9333, lat=43.1356, popup="The University of New Hampshire")
+  
+map
+
+```
